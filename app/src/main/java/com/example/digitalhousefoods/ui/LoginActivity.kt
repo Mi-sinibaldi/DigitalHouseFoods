@@ -27,11 +27,14 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    fun clickBtnLogin() {
-
+    private fun clickBtnLogin() {
+        val btnLogin: Button = findViewById<View>(R.id.btnLogin) as Button
+        btnLogin.setOnClickListener {
+            startActivity(Intent(this@LoginActivity, PrincipalActivity::class.java))
+        }
     }
 
-    fun clickBtnRegister() {
+    private fun clickBtnRegister() {
         val btnRegister: Button = findViewById<View>(R.id.btnRegister) as Button
         btnRegister.setOnClickListener {
             startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
