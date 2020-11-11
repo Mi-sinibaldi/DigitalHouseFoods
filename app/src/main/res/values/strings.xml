@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">DigitalHouseFoods</string>
+    <string name="title_principal">Tony Roma\'s</string>
+    <string name="address_principal">Av. Lavandisca, 717 - Indianópolis, São Paulo</string>
+    <string name="hours_principal">Fecha às 22:00</string>
+    <string name="title_detail_menu">Salada com molho de gengibre</string>
+    <string name="name_register">Name</string>
+    <string name="email_register">Email</string>
+    <string name="password_register">Password</string>
+    <string name="repeate_password_register">Repeate password</string>
+    <string name="register_btn">Register</string>
+    <string name="e_mail_login">E-mail</string>
+    <string name="password_login">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="or_login">OR</string>
+    <string name="title_detail">Tony Roma\'s</string>
+    <string name="desc_title_detail">Pratos principais</string>
 </resources>

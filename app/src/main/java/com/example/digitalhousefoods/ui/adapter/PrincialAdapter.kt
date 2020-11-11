@@ -1,14 +1,17 @@
 package com.example.digitalhousefoods.ui.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.digitalhousefoods.R
 import com.example.digitalhousefoods.model.MenuPrincipal
+import com.example.digitalhousefoods.ui.DetailMenuActivity
 
 class PrincialAdapter(
     private val menuPrincipal: List<MenuPrincipal>,
@@ -31,7 +34,7 @@ class PrincialAdapter(
         holder.bind(item)
 
         holder.itemView.setOnClickListener {
-            //ItemClick(item)
+            ItemClick(item)
         }
     }
 
@@ -40,8 +43,8 @@ class PrincialAdapter(
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val image = itemView.findViewById<ImageView>(R.id.imageView)
-        private val title = itemView.findViewById<TextView>(R.id.textViewName)
+        private val image = itemView.findViewById<ImageView>(R.id.imageViewDetail)
+        private val title = itemView.findViewById<TextView>(R.id.textViewDetail)
         private val address = itemView.findViewById<TextView>(R.id.textViewAddress)
         private val hours = itemView.findViewById<TextView>(R.id.textViewHours)
 
@@ -51,6 +54,13 @@ class PrincialAdapter(
             address.text = menuPrincipal.address
             hours.text = menuPrincipal.hours
         }
+    }
+
+    fun ItemClick(menuPrincipal: MenuPrincipal) {
+        val detailMenu =
+            Intent(context, DetailMenuActivity::class.java)
+
+        ContextCompat.startActivity(context, detailMenu, null)
     }
 
 }
