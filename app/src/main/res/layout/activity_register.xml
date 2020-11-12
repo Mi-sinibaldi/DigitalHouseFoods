@@ -27,6 +27,7 @@
         app:layout_constraintTop_toBottomOf="@+id/include2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNameRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/name_register" />
@@ -47,6 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRegisterName">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmailRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email_register" />
@@ -67,6 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRegisterEmail">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPasswordRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password_register" />
@@ -87,13 +90,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRegisterPassword">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextReapetPasswordRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/repeate_password_register" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/buttonRegister"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
